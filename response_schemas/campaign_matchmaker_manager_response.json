@@ -1,0 +1,66 @@
+{
+  "agent_name": "Campaign Matchmaker Manager",
+  "agent_id": "69eb981694ae1d830940fac8",
+  "description": "Scores and ranks REAL influencer profiles from the database against campaign criteria. Never invents data. Orchestrates Influencer Scoring Agent and Collaboration Insights Agent.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "ranked_influencers": [
+      {
+        "rank": "number",
+        "influencer_id": "string",
+        "influencer_name": "string",
+        "instagram_handle": "string",
+        "follower_count": "number",
+        "overall_performance_score": "number",
+        "niche_alignment_score": "number",
+        "demographics_score": "number",
+        "engagement_score": "number",
+        "content_quality_score": "number",
+        "audience_authenticity_score": "number",
+        "brand_safety_score": "number",
+        "reach_efficiency_score": "number",
+        "predicted_reach": "string",
+        "predicted_engagement_rate": "string",
+        "suggested_fee_min": "number",
+        "suggested_fee_max": "number",
+        "strengths": "string",
+        "considerations": "string",
+        "recommendation": "string",
+        "score_reasoning": "string"
+      }
+    ],
+    "top_recommendations_summary": "string",
+    "campaign_fit_analysis": "string"
+  },
+  "example_response": {
+    "ranked_influencers": [
+      {
+        "rank": 0,
+        "influencer_id": "sample string",
+        "influencer_name": "sample string",
+        "instagram_handle": "sample string",
+        "follower_count": 0,
+        "overall_performance_score": 0,
+        "niche_alignment_score": 0,
+        "demographics_score": 0,
+        "engagement_score": 0,
+        "content_quality_score": 0,
+        "audience_authenticity_score": 0,
+        "brand_safety_score": 0,
+        "reach_efficiency_score": 0,
+        "predicted_reach": "sample string",
+        "predicted_engagement_rate": "sample string",
+        "suggested_fee_min": 0,
+        "suggested_fee_max": 0,
+        "strengths": "sample string",
+        "considerations": "sample string",
+        "recommendation": "sample string",
+        "score_reasoning": "sample string"
+      }
+    ],
+    "top_recommendations_summary": "sample string",
+    "campaign_fit_analysis": "sample string"
+  }
+}

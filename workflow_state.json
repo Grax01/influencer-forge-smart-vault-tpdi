@@ -1,0 +1,52 @@
+{
+  "agents": {
+    "influencer_scoring_agent": {
+      "agent_id": "69eb97e53742b818da05fce8",
+      "name": "Influencer Scoring Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "collaboration_insights_agent": {
+      "agent_id": "69eb97e65ef12f32e129c812",
+      "name": "Collaboration Insights Agent",
+      "type": "sub-agent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "campaign_matchmaker_manager": {
+      "agent_id": "69eb981694ae1d830940fac8",
+      "name": "Campaign Matchmaker Manager",
+      "type": "manager",
+      "provider": "openai",
+      "model": "gpt-4.1",
+      "managed_agents": ["69eb97e53742b818da05fce8", "69eb97e65ef12f32e129c812"]
+    },
+    "profile_analysis_agent": {
+      "agent_id": "69eb981614e70411b00f8059",
+      "name": "Profile Analysis Agent",
+      "type": "independent",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    "outreach_drafting_agent": {
+      "agent_id": "69eb981794ae1d830940faca",
+      "name": "Outreach Drafting Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1"
+    },
+    "script_generator_agent": {
+      "agent_id": "69eb9817f002b0832a126c89",
+      "name": "Script Generator Agent",
+      "type": "independent",
+      "provider": "openai",
+      "model": "gpt-4.1"
+    }
+  },
+  "database": {
+    "db_name": "app_576dc5c0667e43298fdb1da8",
+    "collections": ["users", "influencer_profiles_v2", "campaign_briefs", "collaborations", "conversations", "messages"],
+    "env_vars": ["DATABASE_URL", "APP_JWT_SECRET", "DATABASE_NAME", "DATABASE_PROVIDER"]
+  }
+}

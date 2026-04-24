@@ -1,0 +1,76 @@
+{
+  "agent_name": "Profile Analysis Agent",
+  "agent_id": "69eb981614e70411b00f8059",
+  "description": "Uses custom Instagram tool to fetch profile metrics, top 5 posts/reels with insights, and demographics. LLM derives niche tags from ~40-category taxonomy. Saves all data to MongoDB.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "instagram_handle": "string",
+    "follower_count": "number",
+    "bio": "string",
+    "media_count": "number",
+    "avg_engagement_rate": "number",
+    "content_style": "string",
+    "niche_tags": [
+      "string"
+    ],
+    "top_content": [
+      {
+        "media_url": "string",
+        "caption_summary": "string",
+        "media_type": "string",
+        "reach": "number",
+        "impressions": "number",
+        "likes": "number",
+        "comments": "number",
+        "saves": "number",
+        "shares": "number",
+        "reel_plays": "number"
+      }
+    ],
+    "audience_demographics": {
+      "age_ranges": "string",
+      "gender_split": "string",
+      "top_cities": "string",
+      "top_countries": "string"
+    },
+    "account_reach_28d": "number",
+    "profile_views": "number",
+    "analysis_summary": "string"
+  },
+  "example_response": {
+    "instagram_handle": "sample string",
+    "follower_count": 0,
+    "bio": "sample string",
+    "media_count": 0,
+    "avg_engagement_rate": 0,
+    "content_style": "sample string",
+    "niche_tags": [
+      "sample string"
+    ],
+    "top_content": [
+      {
+        "media_url": "sample string",
+        "caption_summary": "sample string",
+        "media_type": "sample string",
+        "reach": 0,
+        "impressions": 0,
+        "likes": 0,
+        "comments": 0,
+        "saves": 0,
+        "shares": 0,
+        "reel_plays": 0
+      }
+    ],
+    "audience_demographics": {
+      "age_ranges": "sample string",
+      "gender_split": "sample string",
+      "top_cities": "sample string",
+      "top_countries": "sample string"
+    },
+    "account_reach_28d": 0,
+    "profile_views": 0,
+    "analysis_summary": "sample string"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "agent_name": "Script Generator Agent",
+  "agent_id": "69eb9817f002b0832a126c89",
+  "description": "Conversational agent with memory enabled. Multi-turn Q&A gathering product details, tone, audience, platform, duration. Produces structured output: Hook, Script, CTA, Caption + Hashtags.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "hook": "string",
+    "script": "string",
+    "cta": "string",
+    "caption": "string",
+    "hashtags": [
+      "string"
+    ],
+    "platform": "string",
+    "estimated_duration": "string",
+    "tone": "string",
+    "production_notes": "string"
+  },
+  "example_response": {
+    "hook": "sample string",
+    "script": "sample string",
+    "cta": "sample string",
+    "caption": "sample string",
+    "hashtags": [
+      "sample string"
+    ],
+    "platform": "sample string",
+    "estimated_duration": "sample string",
+    "tone": "sample string",
+    "production_notes": "sample string"
+  }
+}

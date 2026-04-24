@@ -1,0 +1,26 @@
+{
+  "workflow": {
+    "nodes": [
+      {"id": "input_node", "type": "Input", "label": "User Request", "nodeCategory": "input"},
+      {"id": "profile_analysis", "type": "Agent", "label": "Profile Analysis Agent", "nodeCategory": "agent"},
+      {"id": "campaign_matchmaker", "type": "Agent", "label": "Campaign Matchmaker Manager", "nodeCategory": "agent"},
+      {"id": "influencer_scoring", "type": "Agent", "label": "Influencer Scoring Agent", "nodeCategory": "agent"},
+      {"id": "collab_insights", "type": "Agent", "label": "Collaboration Insights Agent", "nodeCategory": "agent"},
+      {"id": "outreach_drafting", "type": "Agent", "label": "Outreach Drafting Agent", "nodeCategory": "agent"},
+      {"id": "script_generator", "type": "Agent", "label": "Script Generator Agent", "nodeCategory": "agent"},
+      {"id": "output_node", "type": "Output", "label": "Response", "nodeCategory": "end"}
+    ],
+    "edges": [
+      {"source": "input_node", "target": "profile_analysis"},
+      {"source": "input_node", "target": "campaign_matchmaker"},
+      {"source": "campaign_matchmaker", "target": "influencer_scoring"},
+      {"source": "campaign_matchmaker", "target": "collab_insights"},
+      {"source": "input_node", "target": "outreach_drafting"},
+      {"source": "input_node", "target": "script_generator"},
+      {"source": "profile_analysis", "target": "output_node"},
+      {"source": "campaign_matchmaker", "target": "output_node"},
+      {"source": "outreach_drafting", "target": "output_node"},
+      {"source": "script_generator", "target": "output_node"}
+    ]
+  }
+}

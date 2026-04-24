@@ -1,0 +1,32 @@
+{
+  "agent_name": "Outreach Drafting Agent",
+  "agent_id": "69eb981794ae1d830940faca",
+  "description": "Generates personalized collaboration proposals incorporating influencer strengths, niche fit, and suggested deal terms from matchmaker results.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "subject_line": "string",
+    "greeting": "string",
+    "opening_hook": "string",
+    "value_proposition": "string",
+    "collaboration_details": "string",
+    "mutual_benefits": "string",
+    "call_to_action": "string",
+    "closing": "string",
+    "full_proposal": "string",
+    "personalization_notes": "string"
+  },
+  "example_response": {
+    "subject_line": "sample string",
+    "greeting": "sample string",
+    "opening_hook": "sample string",
+    "value_proposition": "sample string",
+    "collaboration_details": "sample string",
+    "mutual_benefits": "sample string",
+    "call_to_action": "sample string",
+    "closing": "sample string",
+    "full_proposal": "sample string",
+    "personalization_notes": "sample string"
+  }
+}
